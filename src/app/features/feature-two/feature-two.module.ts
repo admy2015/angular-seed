@@ -16,7 +16,6 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [FeatureTwoComponent],
-  exports: [FeatureTwoComponent]
+  declarations: [FeatureTwoComponent]
 })
 export class FeatureTwoModule { }

@@ -4,7 +4,10 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: "feature-one",
-    loadChildren: () => import('./feature-one.module').then(m => m.FeatureOneModule)
+    loadChildren: () => import('./feature-one.module').then(m => m.FeatureOneModule),
+    data: {
+      preload: true
+    }
   }
 ];
 

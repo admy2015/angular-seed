@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule, PreloadingStrategy } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './features/home/home.component';
+import { CustomPreloadingStrategy } from './core/router-preloading-strategy';
 
 
 const routes: Routes = [
@@ -15,15 +16,19 @@ const routes: Routes = [
   }
 ];
 
+
+
 @NgModule({
   imports: [
     RouterModule.forRoot(
       routes,
       {
+        preloadingStrategy: CustomPreloadingStrategy,
         enableTracing: false 
       }
     )
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [CustomPreloadingStrategy]
 })
 export class AppRoutingModule { }
