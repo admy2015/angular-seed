@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './features/home/home.module';
 import { FeatureOneRoutingModule } from './features/feature-one/feature-one-routing.module';
 import { FeatureTwoRoutingModule } from './features/feature-two/feature-two-routing.module';
+import { SvgPlaygroundRoutingModule } from './features/svg-playground/svg-playground-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FeatureTwoRoutingModule } from './features/feature-two/feature-two-rout
     HomeModule,
     FeatureOneRoutingModule,
     FeatureTwoRoutingModule,
+    SvgPlaygroundRoutingModule,
     AppRoutingModule
   ],
   providers: [],
